@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Cafe/static/css/main.c3bdd169.css",
-    "main.js": "/Cafe/static/js/main.20575ca9.js",
+    "main.js": "/Cafe/static/js/main.b8eb10af.js",
     "index.html": "/Cafe/index.html",
     "main.c3bdd169.css.map": "/Cafe/static/css/main.c3bdd169.css.map",
-    "main.20575ca9.js.map": "/Cafe/static/js/main.20575ca9.js.map"
+    "main.b8eb10af.js.map": "/Cafe/static/js/main.b8eb10af.js.map"
   },
   "entrypoints": [
     "static/css/main.c3bdd169.css",
-    "static/js/main.20575ca9.js"
+    "static/js/main.b8eb10af.js"
   ]
 }
