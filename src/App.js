@@ -7,6 +7,8 @@ import About from './pages/About';
 import Menu from './pages/Menu';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy'; 
+import TermsOfService from './pages/ToS'; 
 import './App.css';
 
 function ScrollToTop() {
@@ -23,7 +25,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router basename="/Cafe">
+    <Router basename={process.env.NODE_ENV === 'production' ? '/Cafe' : ''}>
       <ScrollToTop />
       <div className="App">
         <Header />
@@ -34,6 +36,9 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Placeholder pages */}
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
           </Routes>
         </main>
         <Footer />

@@ -1,0 +1,23 @@
+/* Terms of Service Page */
+.terms-page {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  
+  .terms-page .content-container {
+    text-align: center;
+  }
+  
+  .terms-page h1 {
+    color: var(--primary-brown);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-page p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+  }

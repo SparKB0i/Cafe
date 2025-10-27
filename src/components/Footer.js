@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
 import './Footer.css';
 
@@ -63,10 +64,10 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <div className="quick-links">
-              <a href="/about">About Us</a>
-              <a href="/menu">Our Menu</a>
-              <a href="/gallery">Gallery</a>
-              <a href="/contact">Contact</a>
+            <Link to="/about">About Us</Link>
+            <Link to="/menu">Our Menu</Link>
+            <Link to="/gallery">Gallery</Link>
+            <Link to="/contact">Contact</Link>
             </div>
           </div>
         </div>
@@ -78,8 +79,8 @@ const Footer = () => {
               <p>&copy; {currentYear} Café. All rights reserved.</p>
             </div>
             <div className="footer-bottom-right">
-              <a href="/privacy">Privacy Policy</a>
-              <a href="/terms">Terms of Service</a>
+              <Link to="/privacy">Privacy Policy</Link>
+              <Link to="/terms">Terms of Service</Link>
             </div>
           </div>
         </div>
