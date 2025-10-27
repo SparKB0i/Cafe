@@ -1,0 +1,372 @@
+/* Menu Page Styles */
+.menu {
+  padding-top: 0;
+}
+
+/* Menu Hero Section */
+.menu-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(139, 69, 19, 0.9),
+    rgba(160, 82, 45, 0.8)
+  ),
+  url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2047&q=80') center/cover;
+  padding: 8rem 0 6rem;
+  text-align: center;
+  color: white;
+}
+
+.menu-hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu-hero-content .hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--beige);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Menu Navigation */
+.menu-nav {
+  background: var(--beige);
+  padding: 2rem 0;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2rem;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(139, 69, 19, 0.1);
+  min-width: 120px;
+}
+
+.category-tab:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.2);
+  border-color: var(--light-brown);
+}
+
+.category-tab.active {
+  background: var(--primary-brown);
+  color: white;
+  border-color: var(--primary-brown);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.3);
+}
+
+.category-icon {
+  font-size: 2rem;
+  display: block;
+}
+
+.category-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Menu Items */
+.menu-items {
+  background: white;
+  padding: 4rem 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background: var(--cream);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(139, 69, 19, 0.2);
+}
+
+.item-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: var(--primary-brown);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 15px rgba(139, 69, 19, 0.3);
+}
+
+.item-emoji {
+  font-size: 2rem;
+  color: white;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.item-name {
+  color: var(--primary-brown);
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.item-price {
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.item-description {
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Special Offers */
+.special-offers {
+  background: var(--beige);
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.offer-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-gold);
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(139, 69, 19, 0.2);
+}
+
+.offer-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-gold);
+  color: var(--dark-brown);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 10px rgba(218, 165, 32, 0.3);
+}
+
+.offer-card h3 {
+  color: var(--primary-brown);
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.offer-card p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.offer-price {
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: rgba(218, 165, 32, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Order CTA */
+.order-cta {
+  background: linear-gradient(135deg, var(--primary-brown), var(--secondary-brown));
+  color: white;
+  text-align: center;
+}
+
+.order-cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.order-cta p {
+  color: var(--beige);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .menu-hero-content .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .category-tabs {
+    gap: 0.5rem;
+  }
+  
+  .category-tab {
+    padding: 1rem 1.5rem;
+    min-width: 100px;
+  }
+  
+  .category-icon {
+    font-size: 1.5rem;
+  }
+  
+  .category-name {
+    font-size: 0.9rem;
+  }
+  
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .item-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .item-price {
+    margin-left: 0;
+  }
+  
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-hero {
+    padding: 6rem 0 4rem;
+  }
+  
+  .menu-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .menu-hero-content .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .category-tab {
+    padding: 0.8rem 1rem;
+    min-width: 80px;
+  }
+  
+  .category-icon {
+    font-size: 1.3rem;
+  }
+  
+  .category-name {
+    font-size: 0.8rem;
+  }
+  
+  .menu-item {
+    padding: 1.2rem;
+  }
+  
+  .item-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .item-emoji {
+    font-size: 1.5rem;
+  }
+  
+  .item-name {
+    font-size: 1.1rem;
+  }
+  
+  .item-price {
+    font-size: 1.1rem;
+  }
+  
+  .offer-card {
+    padding: 1.5rem;
+  }
+  
+  .offer-card h3 {
+    font-size: 1.3rem;
+  }
+}
