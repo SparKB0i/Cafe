@@ -23,7 +23,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Cafe">
       <ScrollToTop />
       <div className="App">
         <Header />
